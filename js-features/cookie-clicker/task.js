@@ -7,6 +7,8 @@ const cookieClickSpeed = document.getElementById('clicker__speed');
 
 let clickTime = Date.now();
 
+
+
 function cookieClick() {
     cookieClickCounter.textContent = parseInt(cookieClickCounter.textContent) + 1;
     cookieClickSpeed.textContent = (1 / ((Date.now() - clickTime) / 1000)).toFixed(2);
@@ -21,3 +23,6 @@ function cookieClick() {
     }
 }
 cookie.onclick = cookieClick;
+
+clicker__counter.style.fontSize = '20px';
+clicker__speed.style.fontSize = '20px';
